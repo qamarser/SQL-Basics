@@ -33,3 +33,19 @@ WHERE name like 'basma'
 UPDATE students SET  Points=200-1
 WHERE name like 'alex'
 
+# creating a table 
+CREATE TABLE graduate (
+ID INTEGER  PRIMARY KEY  AUTOINCREMENT NOT NULL  ,
+name TEXT NOT NULL UNIQUE,
+Age INTEGER,
+Gender TEXT,
+Points INTEGER,
+Graduation TEXT
+);
+
+# 10
+INSERT INTO graduate (id, name, Age, Gender, Points)
+SELECT *
+FROM students
+WHERE name = 'Layal'
+
