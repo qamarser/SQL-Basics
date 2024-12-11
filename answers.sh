@@ -49,3 +49,24 @@ SELECT *
 FROM students
 WHERE name = 'Layal'
 
+# 11
+UPDATE graduate
+ SET Graduation='08/09/2018'
+ WHERE name like 'layal'
+
+#  12
+DELETE FROM students 
+WHERE name like 'layal'
+
+
+# 14
+CREATE VIEW combined as #reusable query that reflects real-time data; 
+# Temporary Tables: When you need to store data temporarily for processing or when you don’t need the table to persist after your session.
+SELECT e.name, 
+e.Company, 
+c.date
+FROM employees e 
+JOIN companies c 
+ON c.id=e.id;
+
+# 15
