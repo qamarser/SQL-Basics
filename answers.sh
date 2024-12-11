@@ -70,3 +70,32 @@ JOIN companies c
 ON c.id=e.id;
 
 # 15
+SELECT name FROM combined 
+WHERE date<2000
+
+# 16
+SELECT Company 
+FROM employees
+WHERE Role like 'graphic designer'
+
+# 18
+SELECT max(Points)
+FROM students;
+
+# 19
+SELECT avg(Points)
+FROM students;
+
+# 20
+SELECT name
+FROM students
+WHERE Points=500
+
+# 21
+SELECT name
+FROM students
+WHERE name like '%s%'
+
+# 22
+SELECT * FROM students
+ORDER by Points DESC
